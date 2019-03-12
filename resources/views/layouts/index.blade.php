@@ -28,7 +28,7 @@
         </div>
     @endif
       <div class="row">
-        <table class="table">
+        <table class="table table-striped table-light table-hover">
             <tr>
                 <th>#</th>
                 <th class="justify-content-center">Immagine</th>
