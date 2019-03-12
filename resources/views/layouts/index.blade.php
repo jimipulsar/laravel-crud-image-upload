@@ -28,11 +28,11 @@
         </div>
     @endif
       <div class="row">
-        <table class="table table-striped table-light table-hover">
+        <table class="table table-striped table-light table-hover table-responsive">
             <tr>
                 <th>#</th>
                 <th class="justify-content-center">Immagine</th>
-                <th width="160px">Nome Prodotto</th>
+                <th >Nome Prodotto</th>
                 <th>Descrizione</th>
                 <th>Categoria</th>
                 <th class="justify-content-center" width="160px">Azioni</th>
@@ -40,7 +40,7 @@
             <tr>
               @foreach ($posts as $post)
                 <td>{{ $post->id }}</td>
-                <td><img src="{{asset('storage/' . $post->cover)}}" height="80px"></td>
+                <td><img src="{{asset('storage/' . $post->cover)}}" height="80px" class="img-fluid img-thumbnail"></td>
                 <td>{{ $post->title }}</td>
                 <td>{{ substr($post->description, 0, 200)}}{{ strlen($post->description) > 200 ? '...' : ""}}</td>
                 <td>{{ $post->category_id }}</td>
@@ -50,9 +50,6 @@
                         <a class="btn btn-info" href="{{ route('posts.show',$post->id) }}"><i class="fas fa-eye"></i></a>
 
                         <a class="btn btn-primary" href="{{ route('posts.edit',$post->id) }}"><i class="fas fa-edit"></i></a>
-
-
-
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
@@ -61,6 +58,6 @@
             </tr>
             @endforeach
         </table>
+    </div>
 </div>
-
 @endsection
