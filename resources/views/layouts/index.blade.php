@@ -10,7 +10,7 @@
     <div class="row">
         <div class="col-lg-12" id="head">
             <div class="pull-left">
-                <h2>LARAVEL CRUD </h2>
+                <h2>Laravel Crud </h2>
             </div>
             <div class="pull-right">
                 <a class="btn btn-success" href="{{ route('posts.create') }}"> <i class="fas fa-plus"> </i>  Crea nuovo prodotto</a>
