@@ -13,7 +13,7 @@
     <div class="row">
 
           <div class="left-form">
-              <img src="{{asset('storage/' . $post->cover)}}" height="300px">
+              <img src="{{asset('storage/' . $post->cover)}}" class="img-responsive" height="400px">
           </div>
 
               <div class="right-form">
@@ -27,5 +27,6 @@
                 <hr>
           <a class="btn btn-primary" href="{{ route('posts.index') }}"> Torna indietro</a>
         </div>
-
+</div>
+</div>
 @endsection
