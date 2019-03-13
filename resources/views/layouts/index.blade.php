@@ -42,7 +42,7 @@
                 <td>{{ $post->id }}</td>
                 <td><img src="{{asset('storage/' . $post->cover)}}" height="80px" class="img-fluid img-thumbnail"></td>
                 <td>{{ $post->title }}</td>
-                <td>{{ substr($post->description, 0, 300)}}{{ strlen($post->description) > 300 ? '...' : ""}}</td>
+                <td>{{ substr($post->description, 0, 250)}}{{ strlen($post->description) > 250 ? '...' : ""}}</td>
                 <td>{{ $post->category_id }}</td>
                 <td>
                         <form action="{{ route('posts.destroy' ,$post->id) }}" method="post">
