@@ -30,9 +30,9 @@
       <div class="row">
         <table class="table table-striped table-light table-hover table-responsive">
             <tr>
-                <th>#</th>
-                <th class="justify-content-center">Immagine</th>
-                <th >Nome Prodotto</th>
+                <th>ID</th>
+                <th class="justify-content-center" >Immagine</th>
+                <th width="150px" >Nome Prodotto</th>
                 <th>Descrizione</th>
                 <th>Categoria</th>
                 <th class="justify-content-center" width="160px">Azioni</th>
