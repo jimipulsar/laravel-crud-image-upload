@@ -8,7 +8,7 @@
 
 <div class="contenitore">
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-12" id="head">
             <div class="pull-left">
                 <h2>Laravel Crud </h2>
             </div>
@@ -17,6 +17,7 @@
             </div>
         </div>
     </div>
+
     @if ($message = Session::get('success'))
         <div class="alert alert-success">
             <p>{{ $message }}</p>
@@ -28,7 +29,7 @@
         </div>
     @endif
       <div class="row">
-        <table class="table table-striped table-light table-hover table-responsive">
+        <table class="table table-striped table-light table-hover table-responsive" id="head">
             <tr>
                 <th>ID</th>
                 <th class="justify-content-center" >Immagine</th>
